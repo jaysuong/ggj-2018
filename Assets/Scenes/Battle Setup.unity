@@ -197,6 +197,7 @@ MonoBehaviour:
   isActive: 1
   horizontalName: Horizontal
   verticalName: Vertical
+  isMovingFieldName: Is Moving
 --- !u!114 &229760388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,6 +666,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 100096, guid: 320b1c2af77554f99a1658df4a6d3d5c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 320b1c2af77554f99a1658df4a6d3d5c, type: 3}
   m_IsPrefabParent: 0
@@ -767,7 +772,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1286057200975358, guid: 326fdc9b1117f104da936961fd560548, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1790259970401338, guid: 326fdc9b1117f104da936961fd560548, type: 2}
       propertyPath: m_IsActive

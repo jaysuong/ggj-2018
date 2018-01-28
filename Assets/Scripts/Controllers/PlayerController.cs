@@ -19,13 +19,20 @@ namespace boc {
 		[SerializeField]
 		private string verticalName = "Vertical";
 
+		[Header ("Animator Params"), SerializeField]
+		private string isMovingFieldName = "Is Moving";
+
 		public bool IsActive { get { return isActive; } set { isActive = value; } }
 		public float Speed { get { return speed; } set { speed = value; } }
 
 		private CharacterController controller;
+		private Animator animator;
+		private int isMovingFieldId;
 
 		private void Awake () {
 			controller = GetComponent<CharacterController> ();
+			animator = GetComponent<Animator> ();
+			isMovingFieldId = Animator.StringToHash (isMovingFieldName);
 		}
 
 		private void Update () {
@@ -43,6 +50,7 @@ namespace boc {
 			controller.Move (direction * Time.deltaTime * speed);
 
 			RotateCharacter (horizontal, vertical);
+			animator.SetBool (isMovingFieldId, controller.velocity.sqrMagnitude > 0f);
 		}
 
 		private void RotateCharacter (float horizontal, float vertical) {
