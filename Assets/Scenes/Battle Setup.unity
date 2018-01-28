@@ -155,6 +155,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1fe7d0c8061a6b74c85f2182c99ad4ea, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &229760385 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1276290598972210, guid: 1fe7d0c8061a6b74c85f2182c99ad4ea,
+    type: 2}
+  m_PrefabInternal: {fileID: 229760384}
 --- !u!1 &632816076
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,6 +365,7 @@ GameObject:
   - component: {fileID: 1335022806}
   - component: {fileID: 1335022805}
   - component: {fileID: 1335022804}
+  - component: {fileID: 1335022808}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -433,6 +439,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1335022808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1335022803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780172f91fe46314d8e2a5310db8eec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialMaxHP: 100
+  DeathEvent: {fileID: 0}
 --- !u!1 &1356008646
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,7 +665,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1286057200975358, guid: 326fdc9b1117f104da936961fd560548, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1790259970401338, guid: 326fdc9b1117f104da936961fd560548, type: 2}
       propertyPath: m_IsActive
@@ -668,6 +687,11 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 8bea266911e3154478723757dbd3524f,
         type: 3}
+    - target: {fileID: 114364675071266542, guid: 326fdc9b1117f104da936961fd560548,
+        type: 2}
+      propertyPath: PlayerObject
+      value: 
+      objectReference: {fileID: 229760385}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 326fdc9b1117f104da936961fd560548, type: 2}
   m_IsPrefabParent: 0
