@@ -366,6 +366,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4311710364934508}
   - component: {fileID: 95591625271688464}
+  - component: {fileID: 114971390288236800}
+  - component: {fileID: 195934715347365122}
   m_Layer: 0
   m_Name: Troll
   m_TagString: Untagged
@@ -1448,7 +1450,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1312021032735814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.646457, y: 6.597595e-17, z: -2.9712927}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4394322011904982}
@@ -2262,6 +2264,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114971390288236800
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1312021032735814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bea900ac784b4374490bd0737b035d97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_template: {fileID: 11400000, guid: 300402df7239d4548b8f9c1812bb46b3, type: 2}
+  m_executionOrder: 0
 --- !u!137 &137102372248909332
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -2382,3 +2397,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.02914232, y: 1.0204079, z: -0.07651168}
     m_Extent: {x: 1.2687142, y: 1.0162926, z: 0.42247817}
   m_DirtyAABB: 0
+--- !u!195 &195934715347365122
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1312021032735814}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

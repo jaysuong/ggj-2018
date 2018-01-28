@@ -413,6 +413,12 @@ namespace InitialPrefabs.DANI {
 
             decisionScoreMap = new Tuple<int, float>[decisions.Length];
             PrepareBlocks (template, nodeDictionary);
+
+            foreach (var node in nodeDictionary) {
+                if (node.Value is AINode) {
+                    (node.Value as AINode).OnStart ();
+                }
+            }
         }
     }
 
