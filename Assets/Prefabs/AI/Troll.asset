@@ -16,13 +16,19 @@ MonoBehaviour:
   m_observers:
   - {fileID: 114434028293420760}
   m_decisions:
+  - {fileID: 114351300958271194}
   - {fileID: 114922143067961482}
   m_actions:
+  - {fileID: 114250779986314684}
   - {fileID: 114105751409600206}
   - {fileID: 114975254775218330}
   m_conditions:
+  - {fileID: 114428957139561044}
   - {fileID: 114576454462723160}
   m_connections:
+  - {fileID: 114932426784160998}
+  - {fileID: 114950563101429452}
+  - {fileID: 114351242849483524}
   - {fileID: 114832203596000250}
   - {fileID: 114340280791343832}
   m_variables: []
@@ -41,8 +47,24 @@ MonoBehaviour:
   m_isEnabled: 1
   m_Id: -108840
   m_modulePosition: {x: 24, y: -384}
-  triggerName: 
-  attackDuration: 0
+  triggerName: Smash
+  attackDuration: 5
+--- !u!114 &114250779986314684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1e82f0ea5dd8344ae601350664f047, type: 3}
+  m_Name: Idle
+  m_EditorClassIdentifier: 
+  m_comments: 
+  m_isEnabled: 1
+  m_Id: -137650
+  m_modulePosition: {x: 24, y: -264}
+  idleTime: 5
 --- !u!114 &114340280791343832
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -72,11 +94,46 @@ MonoBehaviour:
   m_Name: Smash -> Smash
   m_EditorClassIdentifier: 
   connectionType: 0
-  priority: 0
+  priority: 2
   weight: 0
   m_conditionId: 0
   m_sourceId: -49584
   m_targetId: -108840
+--- !u!114 &114351300958271194
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01c3aa4e92ee0ac4c8bb9cc81f042516, type: 3}
+  m_Name: Idle
+  m_EditorClassIdentifier: 
+  m_comments: 
+  m_isEnabled: 1
+  m_Id: -135854
+  m_modulePosition: {x: -252, y: -264}
+  m_isInterruptable: 1
+  m_totalScore: 1
+  m_runType: 0
+  m_focusWhenSelected: 1
+  m_scoreBoostOnFocus: 1
+--- !u!114 &114428957139561044
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 012d7bdfde6692242bbea10db8ee9fdd, type: 3}
+  m_Name: Base Case -> Idle
+  m_EditorClassIdentifier: 
+  m_comments: 
+  m_Id: -137004
+  compareValue: 0
+  comparison: 0
 --- !u!114 &114434028293420760
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -143,8 +200,42 @@ MonoBehaviour:
   m_isInterruptable: 1
   m_totalScore: 1
   m_runType: 0
-  m_focusWhenSelected: 0
+  m_focusWhenSelected: 1
   m_scoreBoostOnFocus: 1
+--- !u!114 &114932426784160998
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aae1d3f5184439049a5f83f9043a94ba, type: 3}
+  m_Name: Idle -> Idle
+  m_EditorClassIdentifier: 
+  connectionType: 0
+  priority: 2
+  weight: 0
+  m_conditionId: 0
+  m_sourceId: -135854
+  m_targetId: -137650
+--- !u!114 &114950563101429452
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aae1d3f5184439049a5f83f9043a94ba, type: 3}
+  m_Name: Base Case -> Idle
+  m_EditorClassIdentifier: 
+  connectionType: 1
+  priority: 0
+  weight: 1
+  m_conditionId: -137004
+  m_sourceId: -51574
+  m_targetId: -135854
 --- !u!114 &114975254775218330
 MonoBehaviour:
   m_ObjectHideFlags: 1
