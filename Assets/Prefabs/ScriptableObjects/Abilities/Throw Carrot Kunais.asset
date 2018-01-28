@@ -14,10 +14,10 @@ MonoBehaviour:
   duration: 0
   cooldown: 0.2
   abilityKey: 371
-  itemToThrow: {fileID: 1625731535140626, guid: cad24ed385847704aa6c7a551fff852e,
+  itemToThrow: {fileID: 1774251498530210, guid: 26bb452397142d243ab10a6dc08d40be,
     type: 2}
-  indicatorPrefab: {fileID: 1397937197401826, guid: 4a4cf6d56b7f9ec4da45d366c48c63cc,
+  indicatorPrefab: {fileID: 1397937197401826, guid: 8f04eb1f6a926ff4faa4d090a22b2334,
     type: 2}
-  launchOffset: {x: 0, y: 0.2, z: 0}
-  horizontalInputName: Horizontal
-  verticalInputName: Vertical
+  launchOffset: {x: 0, y: 2.5, z: 0}
+  horizontalInputName: AimX
+  verticalInputName: AimY

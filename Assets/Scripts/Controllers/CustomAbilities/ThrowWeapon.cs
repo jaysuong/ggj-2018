@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace boc {
-		[CreateAssetMenu (menuName = "ScriptableObjects/abilities/Throw Item")]
+	[CreateAssetMenu (menuName = "ScriptableObjects/abilities/Throw Item")]
 	public class ThrowWeapon : CooldownAbility {
 		[SerializeField]
 		private KeyCode abilityKey;
@@ -72,7 +72,7 @@ namespace boc {
 
 		private void RotateIndicator () {
 			var horizontal = Input.GetAxis (horizontalInputName);
-			var vertical = Input.GetAxis (verticalInputName);
+			var vertical = -Input.GetAxis (verticalInputName);
 
 			var lookDirection = new Vector3 (horizontal, 0f, vertical);
 			if (lookDirection.sqrMagnitude > 0) {
