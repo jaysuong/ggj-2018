@@ -1,0 +1,274 @@
+fileFormatVersion: 2
+guid: 06e65a9177476ec44b54488eb1e065bc
+timeCreated: 1517156177
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Cinema4D_Editor
+    100002: PumpkinHulk
+    100004: Robot_Head
+    100006: Robot_Head_End
+    100008: Robot_Hips
+    100010: Robot_LeftArm
+    100012: Robot_LeftFoot
+    100014: Robot_LeftForeArm
+    100016: Robot_LeftHand
+    100018: Robot_LeftHandIndex1
+    100020: Robot_LeftHandIndex2
+    100022: Robot_LeftHandIndex3
+    100024: Robot_LeftHandIndex4
+    100026: Robot_LeftHandMiddle1
+    100028: Robot_LeftHandMiddle2
+    100030: Robot_LeftHandMiddle3
+    100032: Robot_LeftHandMiddle4
+    100034: Robot_LeftHandPinky1
+    100036: Robot_LeftHandPinky2
+    100038: Robot_LeftHandPinky3
+    100040: Robot_LeftHandPinky4
+    100042: Robot_LeftHandRing1
+    100044: Robot_LeftHandRing2
+    100046: Robot_LeftHandRing3
+    100048: Robot_LeftHandRing4
+    100050: Robot_LeftHandThumb1
+    100052: Robot_LeftHandThumb2
+    100054: Robot_LeftHandThumb3
+    100056: Robot_LeftHandThumb4
+    100058: Robot_LeftInHandIndex
+    100060: Robot_LeftInHandMiddle
+    100062: Robot_LeftInHandPinky
+    100064: Robot_LeftInHandRing
+    100066: Robot_LeftLeg
+    100068: Robot_LeftShoulder
+    100070: Robot_LeftToeBase
+    100072: Robot_LeftUpLeg
+    100074: Robot_Neck
+    100076: Robot_Reference
+    100078: Robot_References
+    100080: Robot_RightArm
+    100082: Robot_RightFoot
+    100084: Robot_RightForeArm
+    100086: Robot_RightHand
+    100088: Robot_RightHandIndex1
+    100090: Robot_RightHandIndex2
+    100092: Robot_RightHandIndex3
+    100094: Robot_RightHandIndex4
+    100096: Robot_RightHandMiddle1
+    100098: Robot_RightHandMiddle2
+    100100: Robot_RightHandMiddle3
+    100102: Robot_RightHandMiddle4
+    100104: Robot_RightHandPinky1
+    100106: Robot_RightHandPinky2
+    100108: Robot_RightHandPinky3
+    100110: Robot_RightHandPinky4
+    100112: Robot_RightHandRing1
+    100114: Robot_RightHandRing2
+    100116: Robot_RightHandRing3
+    100118: Robot_RightHandRing4
+    100120: Robot_RightHandThumb1
+    100122: Robot_RightHandThumb2
+    100124: Robot_RightHandThumb3
+    100126: Robot_RightHandThumb4
+    100128: Robot_RightInHandIndex
+    100130: Robot_RightInHandMiddle
+    100132: Robot_RightInHandPinky
+    100134: Robot_RightInHandRing
+    100136: Robot_RightLeg
+    100138: Robot_RightShoulder
+    100140: Robot_RightToeBase
+    100142: Robot_RightUpLeg
+    100144: Robot_Spine
+    100146: Robot_Spine1
+    100148: Robot_Spine2
+    100150: Robot_Spine3
+    100152: //RootNode
+    400000: Cinema4D_Editor
+    400002: PumpkinHulk
+    400004: Robot_Head
+    400006: Robot_Head_End
+    400008: Robot_Hips
+    400010: Robot_LeftArm
+    400012: Robot_LeftFoot
+    400014: Robot_LeftForeArm
+    400016: Robot_LeftHand
+    400018: Robot_LeftHandIndex1
+    400020: Robot_LeftHandIndex2
+    400022: Robot_LeftHandIndex3
+    400024: Robot_LeftHandIndex4
+    400026: Robot_LeftHandMiddle1
+    400028: Robot_LeftHandMiddle2
+    400030: Robot_LeftHandMiddle3
+    400032: Robot_LeftHandMiddle4
+    400034: Robot_LeftHandPinky1
+    400036: Robot_LeftHandPinky2
+    400038: Robot_LeftHandPinky3
+    400040: Robot_LeftHandPinky4
+    400042: Robot_LeftHandRing1
+    400044: Robot_LeftHandRing2
+    400046: Robot_LeftHandRing3
+    400048: Robot_LeftHandRing4
+    400050: Robot_LeftHandThumb1
+    400052: Robot_LeftHandThumb2
+    400054: Robot_LeftHandThumb3
+    400056: Robot_LeftHandThumb4
+    400058: Robot_LeftInHandIndex
+    400060: Robot_LeftInHandMiddle
+    400062: Robot_LeftInHandPinky
+    400064: Robot_LeftInHandRing
+    400066: Robot_LeftLeg
+    400068: Robot_LeftShoulder
+    400070: Robot_LeftToeBase
+    400072: Robot_LeftUpLeg
+    400074: Robot_Neck
+    400076: Robot_Reference
+    400078: Robot_References
+    400080: Robot_RightArm
+    400082: Robot_RightFoot
+    400084: Robot_RightForeArm
+    400086: Robot_RightHand
+    400088: Robot_RightHandIndex1
+    400090: Robot_RightHandIndex2
+    400092: Robot_RightHandIndex3
+    400094: Robot_RightHandIndex4
+    400096: Robot_RightHandMiddle1
+    400098: Robot_RightHandMiddle2
+    400100: Robot_RightHandMiddle3
+    400102: Robot_RightHandMiddle4
+    400104: Robot_RightHandPinky1
+    400106: Robot_RightHandPinky2
+    400108: Robot_RightHandPinky3
+    400110: Robot_RightHandPinky4
+    400112: Robot_RightHandRing1
+    400114: Robot_RightHandRing2
+    400116: Robot_RightHandRing3
+    400118: Robot_RightHandRing4
+    400120: Robot_RightHandThumb1
+    400122: Robot_RightHandThumb2
+    400124: Robot_RightHandThumb3
+    400126: Robot_RightHandThumb4
+    400128: Robot_RightInHandIndex
+    400130: Robot_RightInHandMiddle
+    400132: Robot_RightInHandPinky
+    400134: Robot_RightInHandRing
+    400136: Robot_RightLeg
+    400138: Robot_RightShoulder
+    400140: Robot_RightToeBase
+    400142: Robot_RightUpLeg
+    400144: Robot_Spine
+    400146: Robot_Spine1
+    400148: Robot_Spine2
+    400150: Robot_Spine3
+    400152: //RootNode
+    2100000: Mat
+    4300000: PumpkinHulk
+    7400000: Power Up
+    9500000: //RootNode
+    13700000: PumpkinHulk
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Power Up
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 71
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
