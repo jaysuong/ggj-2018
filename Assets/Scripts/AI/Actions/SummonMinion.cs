@@ -5,25 +5,33 @@ using UnityEngine;
 using UnityEngine.AI;
 
 namespace boc {
-	public class Idle : Action {
+	public class SummonMinion : Action {
 		[SerializeField]
 		private float idleTime;
 		[SerializeField]
-		private string triggerName;
+		private GameObject minion;
+		[SerializeField]
+		private float spawnDistance;
 
 		private float timer;
 		private NavMeshAgent agent;
-		private Animator animator;
 
 		public override void OnStart () {
 			agent = GetComponent<NavMeshAgent> ();
-			animator = GetComponent<Animator> ();
 		}
 
 		public override void OnActionStart () {
 			timer = idleTime;
 			agent.isStopped = true;
-			animator.SetTrigger (triggerName);
+
+			var spawnPos = GetRandomSpawn ();
+			NavMeshHit hit;
+
+			if (NavMesh.SamplePosition (spawnPos, out hit, 10f, NavMesh.AllAreas)) {
+				spawnPos = hit.position;
+
+				Instantiate (minion, spawnPos, Quaternion.identity);
+			}
 		}
 
 		public override ActionState OnActionUpdate () {
@@ -32,5 +40,14 @@ namespace boc {
 			return timer <= 0f ? ActionState.Success : ActionState.Running;
 		}
 
+		private Vector3 GetRandomSpawn () {
+			var current = Transform.position;
+			var angle = Random.value * 360f;
+
+			current.x += Mathf.Cos (angle) * spawnDistance;
+			current.z += Mathf.Sin (angle) * spawnDistance;
+
+			return current;
+		}
 	}
 }
