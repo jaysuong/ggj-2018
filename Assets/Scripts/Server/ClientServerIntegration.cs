@@ -60,6 +60,7 @@ namespace boc.Server {
 
 		private IEnumerator RetrieveEventData () {
 			var dataURL = string.Format ("{0}/{1}", hostURL, retrieveDataURL);
+			Debug.Log (dataURL);
 			var www = new WWW (dataURL);
 			yield return www;
 			eventData = www.text;

@@ -49,15 +49,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1201176589478892}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16a75216b1c47b748a3805abe70adc76, type: 3}
+  m_Script: {fileID: 11500000, guid: 3813acfc3a2158e40ba9394f501b1354, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostURL: https://ggj2018-server.azurewebsites.net/
+  hostURL: ggj2018-server.azurewebsites.net
   event1URL: event1
   event2URL: event2
   event3URL: event3
   retrieveDataURL: get-data
-  eventDataStorage: {fileID: 11400000, guid: a50bfd69a912baa4aa9ab3ab36001a75, type: 2}
+  eventDataStorage: {fileID: 11400000, guid: dce3f0d815e241640a671e7da01a4667, type: 2}
 --- !u!114 &114297387703935088
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -66,8 +66,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1201176589478892}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7278865ac8bd3ae408242cc088ac71ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 0640b078b5f44c748bb70334c10511ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 15
-  eventDataStorage: {fileID: 11400000, guid: a50bfd69a912baa4aa9ab3ab36001a75, type: 2}
+  waitTime: 1
+  eventDataStorage: {fileID: 11400000, guid: dce3f0d815e241640a671e7da01a4667, type: 2}

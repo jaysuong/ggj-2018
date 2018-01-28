@@ -13,6 +13,10 @@ namespace boc {
 
 		private new Rigidbody rigidbody;
 
+		private void Awake () {
+			rigidbody = GetComponent<Rigidbody> ();
+		}
+
 		private void OnTriggerEnter (Collider other) {
 			rigidbody.isKinematic = true;
 			rigidbody.velocity = Vector3.zero;

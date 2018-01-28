@@ -76,12 +76,13 @@ namespace boc {
 					PlayGlobalEvent (event3.globalEvent);
 				}
 
-				yield return null;
+				yield return new WaitForSeconds(10f);
 			}
 		}
 
 		private void PlayGlobalEvent (GlobalEvent ge) {
-			if (ActiveEvent != ge) {
+			Debug.LogWarning (ge);
+			if (ActiveEvent != null && ActiveEvent != ge) {
 				ActiveEvent.OnEventEnd (this);
 			}
 
