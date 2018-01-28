@@ -15,5 +15,5 @@ MonoBehaviour:
     type: 2}
   startPosition: {x: 147, y: 50, z: 50}
   spawnDistance: 25
-  numberToSpawn: 30
+  numberToSpawn: 1
   interval: 0.25

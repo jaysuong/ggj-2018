@@ -23,6 +23,8 @@ namespace boc {
 
 		public GlobalEvent ActiveEvent { get; private set; }
 
+		private float waitTimer;
+
 		[System.Serializable]
 		public struct EventPool {
 			public GlobalEvent globalEvent;
@@ -63,6 +65,7 @@ namespace boc {
 
 		private void HandleStartEvent () {
 			StopAllCoroutines ();
+			client.InvokeResetAllEvents ();
 			StartCoroutine (PlayPoolCheckSequence ());
 		}
 
@@ -76,7 +79,8 @@ namespace boc {
 					PlayGlobalEvent (event3.globalEvent);
 				}
 
-				yield return new WaitForSeconds(10f);
+				yield return new WaitForSeconds (waitTimer);
+				waitTimer = Time.deltaTime;
 			}
 		}
 
@@ -90,6 +94,7 @@ namespace boc {
 			ActiveEvent.OnEventStart (this);
 
 			client.InvokeResetAllEvents ();
+			waitTimer = 5f;
 		}
 
 	}

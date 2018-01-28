@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace boc {
-	[CreateAssetMenu(menuName = "ScriptableObjects/Global/Swords")]
+	[CreateAssetMenu (menuName = "ScriptableObjects/Global/Swords")]
 	public class SwordsGlobalEvent : GlobalEvent {
 		[SerializeField]
 		private GameObject swordPrefab;
@@ -21,6 +21,7 @@ namespace boc {
 
 		public override void OnEventStart (GlobalEventManager manager) {
 			timer = 0f;
+			amountSpawned = 0;
 		}
 
 		public override void OnEventUpdate (GlobalEventManager manager) {
@@ -34,6 +35,11 @@ namespace boc {
 				var position = startPosition + random;
 
 				Instantiate (swordPrefab, position, Quaternion.identity);
+				amountSpawned++;
+
+				if (amountSpawned >= numberToSpawn) {
+					manager.EndEvent (this);
+				}
 			}
 		}
 

@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3813acfc3a2158e40ba9394f501b1354, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostURL: ggj2018-server.azurewebsites.net
+  hostURL: http://ggj2018-server.azurewebsites.net
   event1URL: event1
   event2URL: event2
   event3URL: event3

@@ -18,6 +18,7 @@ namespace boc {
 		}
 
 		private void OnTriggerEnter (Collider other) {
+			Debug.Log (other);
 			rigidbody.isKinematic = true;
 			rigidbody.velocity = Vector3.zero;
 

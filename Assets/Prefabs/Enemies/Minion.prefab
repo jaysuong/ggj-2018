@@ -488,6 +488,7 @@ GameObject:
   - component: {fileID: 114388103921370046}
   - component: {fileID: 195537524118782452}
   - component: {fileID: 114737874223561026}
+  - component: {fileID: 136580290467618704}
   m_Layer: 11
   m_Name: Minion
   m_TagString: Untagged
@@ -2416,8 +2417,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 780172f91fe46314d8e2a5310db8eec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialMaxHP: 10
+  InitialMaxHP: 4
   DeathEvent: {fileID: 0}
+--- !u!136 &136580290467618704
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1344313537138918}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2.29
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.89, z: 0}
 --- !u!137 &137650893896234974
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -2547,10 +2561,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 15
+  m_Acceleration: 360
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 720
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
