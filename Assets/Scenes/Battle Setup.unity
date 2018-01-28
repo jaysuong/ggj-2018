@@ -328,32 +328,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1134857498 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1814286436348332, guid: 326fdc9b1117f104da936961fd560548,
-    type: 2}
-  m_PrefabInternal: {fileID: 1495739328}
---- !u!114 &1134857500 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114215249344833828, guid: 326fdc9b1117f104da936961fd560548,
-    type: 2}
-  m_PrefabInternal: {fileID: 1495739328}
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
---- !u!114 &1134857502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1134857498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4488c884caf8d1f40bb8e16297c6dc00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ability: {fileID: 11400000, guid: 6d63e18ded4f2b040b8478e7852f9b02, type: 2}
-  abilityImage: {fileID: 1134857500}
-  bounceScale: {x: 1.1, y: 1.1, z: 1.1}
-  bounceDuration: 1
 --- !u!1 &1335022803
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,30 +637,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1286057200975358, guid: 326fdc9b1117f104da936961fd560548, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1790259970401338, guid: 326fdc9b1117f104da936961fd560548, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1562215900544140, guid: 326fdc9b1117f104da936961fd560548, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114215249344833828, guid: 326fdc9b1117f104da936961fd560548,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 4798f05efd0f3e7418f5f572977e9a0d,
-        type: 3}
-    - target: {fileID: 114093714048466754, guid: 326fdc9b1117f104da936961fd560548,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 8bea266911e3154478723757dbd3524f,
-        type: 3}
     - target: {fileID: 114364675071266542, guid: 326fdc9b1117f104da936961fd560548,
         type: 2}
       propertyPath: PlayerObject

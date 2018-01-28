@@ -262,9 +262,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5627371a54f535347809854d84f69bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToLose: 300
-  startGameEvent: {fileID: 11400000, guid: ede2a4c4e85d9a9488e428d0198227af, type: 2}
-  endGameEvent: {fileID: 11400000, guid: b6c4cb75e76a2f04ea23a4149e1a7d4a, type: 2}
 --- !u!1001 &1919749693
 Prefab:
   m_ObjectHideFlags: 0
