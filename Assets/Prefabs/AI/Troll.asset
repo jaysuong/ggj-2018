@@ -18,6 +18,7 @@ MonoBehaviour:
   m_decisions:
   - {fileID: 114922143067961482}
   m_actions:
+  - {fileID: 114105751409600206}
   - {fileID: 114975254775218330}
   m_conditions:
   - {fileID: 114576454462723160}
@@ -25,6 +26,23 @@ MonoBehaviour:
   - {fileID: 114832203596000250}
   - {fileID: 114340280791343832}
   m_variables: []
+--- !u!114 &114105751409600206
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f00cef0f95465db48bea8fa745f5ce98, type: 3}
+  m_Name: Smash
+  m_EditorClassIdentifier: 
+  m_comments: 
+  m_isEnabled: 1
+  m_Id: -108840
+  m_modulePosition: {x: 24, y: -384}
+  triggerName: 
+  attackDuration: 0
 --- !u!114 &114340280791343832
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -42,6 +60,23 @@ MonoBehaviour:
   m_conditionId: -52340
   m_sourceId: -51574
   m_targetId: -49584
+--- !u!114 &114351242849483524
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aae1d3f5184439049a5f83f9043a94ba, type: 3}
+  m_Name: Smash -> Smash
+  m_EditorClassIdentifier: 
+  connectionType: 0
+  priority: 0
+  weight: 0
+  m_conditionId: 0
+  m_sourceId: -49584
+  m_targetId: -108840
 --- !u!114 &114434028293420760
 MonoBehaviour:
   m_ObjectHideFlags: 1
