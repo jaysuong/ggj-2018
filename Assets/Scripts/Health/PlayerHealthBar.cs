@@ -36,12 +36,15 @@ namespace boc {
 		}
 
 		void Update () {
-			if (Input.GetKeyUp ("a") && PlayerHealth.CurrentHP > 0) {
-				// Stop the previous lerp. Update the health and start a new lerp.
-				StopCoroutine ("LerpHealth");
-				PlayerHealth.Damage (5);
-				StartCoroutine ("LerpHealth");
+			if (PlayerHealth != null) {
+				ForegroundBar.fillAmount = PlayerHealth.CurrentHP / PlayerHealth.MaxHP;
 			}
+			// if (Input.GetKeyUp ("a") && PlayerHealth.CurrentHP > 0) {
+			// 	// Stop the previous lerp. Update the health and start a new lerp.
+			// 	StopCoroutine ("LerpHealth");
+			// 	PlayerHealth.Damage (5);
+			// 	StartCoroutine ("LerpHealth");
+			// }
 		}
 	}
 }

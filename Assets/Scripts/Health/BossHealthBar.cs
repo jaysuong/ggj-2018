@@ -49,20 +49,24 @@ namespace boc {
 		}
 
 		void Update () {
-			if (Input.GetKeyUp ("s") && BossHealth.CurrentHP > 0) {
-				// Stop the previous lerp. Update the health and start a new lerp.
-				BossHealth.Damage (10);
+			// if (Input.GetKeyUp ("s") && BossHealth.CurrentHP > 0) {
+			// 	// Stop the previous lerp. Update the health and start a new lerp.
+			// 	BossHealth.Damage (10);
 
-				StopCoroutine ("LerpHealth");
-				if (BossHealth.CurrentHP > 0 && BossHealth.CurrentHP < (ColorIndex - 1) * OneBarHP) {
-					// Update the foreground and background hp bar colors.
-					ColorIndex--;
-					ForegroundBar.color = BarColors[ColorIndex];
-					BackgroundBar.color = BarColors[ColorIndex - 1];
-					// New HP bar starts at full.
-					ForegroundBar.fillAmount = 1;
-				}
-				StartCoroutine ("LerpHealth");
+			// 	StopCoroutine ("LerpHealth");
+			// 	if (BossHealth.CurrentHP > 0 && BossHealth.CurrentHP < (ColorIndex - 1) * OneBarHP) {
+			// 		// Update the foreground and background hp bar colors.
+			// 		ColorIndex--;
+			// 		ForegroundBar.color = BarColors[ColorIndex];
+			// 		BackgroundBar.color = BarColors[ColorIndex - 1];
+			// 		// New HP bar starts at full.
+			// 		ForegroundBar.fillAmount = 1;
+			// 	}
+			// 	StartCoroutine ("LerpHealth");
+			// }
+
+			if (BossHealth != null) {
+				ForegroundBar.fillAmount = BossHealth.CurrentHP / BossHealth.MaxHP;
 			}
 		}
 

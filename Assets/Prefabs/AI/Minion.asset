@@ -27,7 +27,6 @@ MonoBehaviour:
   - {fileID: 114254636866876752}
   - {fileID: 114709911429737856}
   - {fileID: 114020556071834334}
-  - {fileID: 114723287009364164}
   m_variables: []
 --- !u!114 &114020556071834334
 MonoBehaviour:
@@ -77,8 +76,8 @@ MonoBehaviour:
   m_comments: 
   m_isEnabled: 1
   m_Id: -153510
-  m_modulePosition: {x: -534, y: -765}
-  arrivalDistance: 10
+  m_modulePosition: {x: -528, y: -768}
+  arrivalDistance: 3
 --- !u!114 &114254636866876752
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -133,23 +132,6 @@ MonoBehaviour:
   m_conditionId: 0
   m_sourceId: -153494
   m_targetId: -153510
---- !u!114 &114723287009364164
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aae1d3f5184439049a5f83f9043a94ba, type: 3}
-  m_Name: Base Case -> Summon Minion
-  m_EditorClassIdentifier: 
-  connectionType: 1
-  priority: 0
-  weight: 1
-  m_conditionId: -153532
-  m_sourceId: -153482
-  m_targetId: -153486
 --- !u!114 &114806764183549874
 MonoBehaviour:
   m_ObjectHideFlags: 1

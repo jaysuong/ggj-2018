@@ -18,10 +18,11 @@ namespace boc {
 
 		public override void OnActionStart () {
 			playerTransform = PlayerTag.playerTransform;
+			agent.isStopped = false;
 
 			if (playerTransform != null) {
 				agent.SetDestination (playerTransform.position);
-				agent.isStopped = false;
+				
 			}
 		}
 

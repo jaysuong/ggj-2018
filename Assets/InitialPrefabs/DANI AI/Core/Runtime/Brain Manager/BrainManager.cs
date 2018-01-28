@@ -89,6 +89,7 @@ namespace InitialPrefabs.DANI {
 
             switch (brain.ExecutionOrder) {
                 case ExecutionType.OnUpdate:
+                    updateList.Remove (brain);
                     updateList.Add (brain);
                     break;
 

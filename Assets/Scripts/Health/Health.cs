@@ -17,6 +17,7 @@ namespace boc {
 			CurrentHP = Mathf.Min (CurrentHP + amount, MaxHP);
 		}
 		public void Damage (float amount) {
+			Debug.Log (amount);
 			CurrentHP -= amount;
 			// gameevent on overkill
 			if (CurrentHP <= 0 && DeathEvent != null)

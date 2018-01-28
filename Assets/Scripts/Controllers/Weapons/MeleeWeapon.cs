@@ -10,11 +10,14 @@ namespace boc {
 		public bool IsActive { get; set; }
 
 		private void OnTriggerEnter (Collider c) {
-			var hp = c.GetComponentInParent<IHealth> ();
+			if (IsActive) {
+				Debug.Log (c.gameObject.name);
+				var hp = c.GetComponentInParent<IHealth> ();
 
-			if (hp != null) {
-				hp.Damage (damage);
-				IsActive = false;
+				if (hp != null) {
+					hp.Damage (damage);
+					IsActive = false;
+				}
 			}
 		}
 	}

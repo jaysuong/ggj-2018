@@ -40,6 +40,7 @@ namespace boc {
 
 		public override void OnActionEnd (ActionState state) {
 			weapon.IsActive = false;
+			animator.ResetTrigger (triggerName);
 		}
 	}
 }

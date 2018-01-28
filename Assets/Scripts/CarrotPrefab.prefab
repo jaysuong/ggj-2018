@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4502918213603054}
   - component: {fileID: 198910913841244100}
   - component: {fileID: 199801445898141542}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Particle System (Carrot Explosion)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4407428781762560}
   - component: {fileID: 33164189650775908}
   - component: {fileID: 23254693537579740}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4230595455331868}
   - component: {fileID: 33655256508298688}
   - component: {fileID: 23210652320167476}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: root 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 4591491928718118}
   - component: {fileID: 33701181172701258}
   - component: {fileID: 23651598253832536}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: root 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 54710050991182028}
   - component: {fileID: 136616697223395274}
   - component: {fileID: 114999857168015672}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: CarrotPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -317,6 +317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ps: {fileID: 198910913841244100}
   InitialForce: 1000
+  damage: 2
 --- !u!136 &136616697223395274
 CapsuleCollider:
   m_ObjectHideFlags: 1

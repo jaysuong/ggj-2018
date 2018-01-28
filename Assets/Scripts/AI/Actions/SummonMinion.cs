@@ -21,6 +21,7 @@ namespace boc {
 		}
 
 		public override void OnActionStart () {
+			Debug.Log ("Sadsdfnsodfnaods;f");
 			timer = idleTime;
 			agent.isStopped = true;
 

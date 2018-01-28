@@ -303,6 +303,11 @@ namespace InitialPrefabs.DANI {
 
                     DaniRuntimeBridge.SelectDecision (candidateDecision, this);
                 }
+            } else {
+                if (!activeActionBlock.IsCurrentlyRunning) {
+                    activeActionBlock.Reset ();
+                    activeActionBlock.Start (rng);
+                }
             }
         }
 
