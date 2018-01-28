@@ -707,7 +707,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1231626559 stripped
 GameObject:
@@ -885,6 +885,64 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 314f222691d9fcb47a6efce57ba99b5a, type: 3}
+--- !u!1001 &1876272013
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 7e3b1c6d276a9c04c84835f56653d9ed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 150.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7e3b1c6d276a9c04c84835f56653d9ed, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 35.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7e3b1c6d276a9c04c84835f56653d9ed, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 50.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7e3b1c6d276a9c04c84835f56653d9ed, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.42378208
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7e3b1c6d276a9c04c84835f56653d9ed, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7e3b1c6d276a9c04c84835f56653d9ed, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7e3b1c6d276a9c04c84835f56653d9ed, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9057642
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7e3b1c6d276a9c04c84835f56653d9ed, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7e3b1c6d276a9c04c84835f56653d9ed, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7e3b1c6d276a9c04c84835f56653d9ed, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7e3b1c6d276a9c04c84835f56653d9ed, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7e3b1c6d276a9c04c84835f56653d9ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -50.147003
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7e3b1c6d276a9c04c84835f56653d9ed, type: 3}
+  m_IsPrefabParent: 0
 --- !u!1 &1965330396 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1075020720769112, guid: 91cfd65b8f80884419bc29abe703f7b7,
