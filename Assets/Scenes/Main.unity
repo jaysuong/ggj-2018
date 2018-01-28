@@ -262,6 +262,73 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5627371a54f535347809854d84f69bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeToLose: 300
+  startGameEvent: {fileID: 11400000, guid: ede2a4c4e85d9a9488e428d0198227af, type: 2}
+  endGameEvent: {fileID: 11400000, guid: b6c4cb75e76a2f04ea23a4149e1a7d4a, type: 2}
+--- !u!1 &1640943468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1201176589478892, guid: 565e21ff07f88934a80e9e24cd8349cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1640943471}
+  - component: {fileID: 1640943470}
+  - component: {fileID: 1640943469}
+  m_Layer: 0
+  m_Name: '[Server]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1640943469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114297387703935088, guid: 565e21ff07f88934a80e9e24cd8349cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1640943468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0640b078b5f44c748bb70334c10511ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitTime: 15
+  eventDataStorage: {fileID: 11400000, guid: dce3f0d815e241640a671e7da01a4667, type: 2}
+--- !u!114 &1640943470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114189209881746606, guid: 565e21ff07f88934a80e9e24cd8349cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1640943468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3813acfc3a2158e40ba9394f501b1354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hostURL: ggj2018-server.azurewebsites.net
+  event1URL: event1
+  event2URL: event2
+  event3URL: event3
+  retrieveDataURL: get-data
+  eventDataStorage: {fileID: 11400000, guid: dce3f0d815e241640a671e7da01a4667, type: 2}
+--- !u!4 &1640943471
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4874077949007280, guid: 565e21ff07f88934a80e9e24cd8349cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1640943468}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1919749693
 Prefab:
   m_ObjectHideFlags: 0
@@ -384,6 +451,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1980979877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1980979879}
+  - component: {fileID: 1980979878}
+  m_Layer: 0
+  m_Name: '[Game] Global Events'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1980979878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1980979877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82a498ac29e047148b896a8a6e33c38a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  event1:
+    globalEvent: {fileID: 0}
+    poolSize: 0
+  event2:
+    globalEvent: {fileID: 0}
+    poolSize: 0
+  event3:
+    globalEvent: {fileID: 0}
+    poolSize: 0
+  storage: {fileID: 11400000, guid: dce3f0d815e241640a671e7da01a4667, type: 2}
+  client: {fileID: 1640943470}
+  startEvent: {fileID: 11400000, guid: e87abba048fc76d4db0a8973a2d12646, type: 2}
+  endEvent: {fileID: 11400000, guid: d08d7919f9c453f42845e86a210a19ac, type: 2}
+--- !u!4 &1980979879
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1980979877}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2131200708
 GameObject:
