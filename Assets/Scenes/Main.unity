@@ -480,13 +480,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   event1:
-    globalEvent: {fileID: 0}
+    globalEvent: {fileID: 11400000, guid: 13ce7cfa51ce72748ae2a1e3df76bbc1, type: 2}
     poolSize: 0
   event2:
-    globalEvent: {fileID: 0}
+    globalEvent: {fileID: 11400000, guid: 06618ade87d61b145bfcdb12729a1d90, type: 2}
     poolSize: 0
   event3:
-    globalEvent: {fileID: 0}
+    globalEvent: {fileID: 11400000, guid: 13ce7cfa51ce72748ae2a1e3df76bbc1, type: 2}
     poolSize: 0
   storage: {fileID: 11400000, guid: dce3f0d815e241640a671e7da01a4667, type: 2}
   client: {fileID: 1640943470}
