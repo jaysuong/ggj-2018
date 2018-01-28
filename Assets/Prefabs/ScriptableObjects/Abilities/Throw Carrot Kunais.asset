@@ -18,6 +18,6 @@ MonoBehaviour:
     type: 2}
   indicatorPrefab: {fileID: 1397937197401826, guid: 8f04eb1f6a926ff4faa4d090a22b2334,
     type: 2}
-  launchOffset: {x: 0, y: 0.2, z: 0}
+  launchOffset: {x: 0, y: 5, z: 0}
   horizontalInputName: Horizontal
   verticalInputName: Vertical
